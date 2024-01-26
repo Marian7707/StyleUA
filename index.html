@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="app.js" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Boogaloo&family=IBM+Plex+Mono:ital,wght@1,300&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <!-- Тут буде ваш логотип -->
+        <img src="./img/logo.png" alt="Logo" />
+      </div>
+      <button class="hamburger-menu" aria-label="Toggle menu">☰</button>
+      <nav class="navigation-menu">
+        <ul>
+          <li><a href="#men">MEN</a></li>
+          <li><a href="#women">WOMEN</a></li>
+          <li><a href="#kids">ACCESSORIES</a></li>
+          <li><a href="#sale">SALE</a></li>
+          <li><a href="#lifestyle">PARTIES</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <div class="search-bar">
+          <!-- Пошукова форма -->
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="user-actions">
+          <a href="#account"
+            ><img src="./img/user-solid-dark.svg" alt="Account"
+          /></a>
+          <a href="#wishlist"
+            ><img src="./img/heart-solid.svg" alt="Wishlist"
+          /></a>
+          <a href="#cart" class="cart-icon">
+            <img src="./img/cart-shopping-solid.svg" alt="Cart" />
+            <span class="cart-count">3</span>
+            <!-- Припустимо, що в кошику 3 товари -->
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="slider">
+        <div class="slide-container">
+          <!-- Копія останнього слайду для безшовного переходу -->
+          <div class="slide clone">
+            <img src="./img/slider-2.png" alt="Slide 5" />
+          </div>
+          <!-- Оригінальні слайди -->
+          <div class="slide">
+            <img src="./img/slider-1.png" alt="Slide 1" />
+          </div>
+          <div class="slide">
+            <img src="./img/slider-3.png" alt="Slide 2" />
+          </div>
+          <div class="slide">
+            <img src="./img/slider-2.png" alt="Slide 3" />
+          </div>
+          <div class="slide">
+            <img src="./img/slider-3.png" alt="Slide 4" />
+          </div>
+
+          <!-- Копія першого слайду для безшовного переходу -->
+          <div class="slide clone">
+            <img src="./img/slider-1.png" alt="Slide 1" />
+          </div>
+        </div>
+
+        <div class="slider-controls">
+          <a href="#shop-men" class="slider-button">SHOP MEN →</a>
+          <a href="#shop-women" class="slider-button">SHOP WOMEN →</a>
+          <a href="#shop-kids" class="slider-button">SHOP KIDS →</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <!-- Інформація про авторські права, посилання на політику конфіденційності та інші посилання -->
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

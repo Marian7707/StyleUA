@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFF;
+  padding: 10px 20px;
+}
+.header .hamburger-menu {
+  display: none;
+}
+.header .logo img {
+  top: 30px;
+  position: absolute;
+  max-width: 250px;
+}
+.header .hamburger-menu {
+  display: none;
+}
+.header .navigation-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.header .navigation-menu ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.header .navigation-menu ul li a:hover {
+  color: #555;
+}
+.header .header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header .header-right .search-bar input {
+  padding: 5px;
+  margin-right: 10px;
+}
+.header .header-right .user-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header .header-right .user-actions a {
+  text-decoration: none;
+  color: #000;
+  margin-right: 10px;
+}
+.header .header-right .user-actions a img {
+  border-radius: 10px;
+  padding: 5px;
+  width: 30px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.header .header-right .user-actions a img:hover {
+  background-color: wheat;
+  transform: translateY(-5px);
+}
+.header .cart-icon {
+  position: relative;
+  display: inline-block;
+}
+.header .cart-icon img {
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 2px;
+  width: 40px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.header .cart-icon img:hover {
+  background-color: wheat;
+  transform: translateY(-5px);
+}
+.header .cart-icon .cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.75em;
+  line-height: 1;
+  min-width: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid white;
+}
+
+.slider {
+  border-radius: 30px;
+  top: 2.5rem;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 61%;
+}
+.slider .slider-controls {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.slider .slider-controls .slider-button {
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: 1px solid #000000;
+  transition: all 0.3s ease;
+}
+.slider .slider-controls .slider-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.slider .slide-container {
+  display: flex;
+  width: 500%;
+  transition: transform 0.3s ease-in-out;
+}
+.slider .slide-container .slide {
+  width: 100%;
+}
+.slider .slide-container .slide img {
+  width: 1100px;
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header .hamburger-menu {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  .header .navigation-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+}
+.navigation-menu.active {
+  display: flex;
+  animation: slideDown 0.5s ease forwards;
+}
+
+.logo img {
+  position: static;
+  max-width: 100px;
+}
+
+.navigation-menu ul {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+.navigation-menu ul li a {
+  font-size: 0.8em;
+}
+
+.header-right {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.header-right .search-bar input {
+  width: 100%;
+}
+
+.slider {
+  border-radius: 10px;
+  width: 100%;
+}
+.slider .slider-controls {
+  top: 90%;
+  left: 50%;
+}
+.slider .slide-container .slide img {
+  width: 100%;
+}
+
+.product-grid .product-item {
+  width: 100%;
+  margin: 10px 0;
+}
+.product-grid .product-item .product-info .product-price {
+  font-size: 1em;
+}/*# sourceMappingURL=style.css.map */
