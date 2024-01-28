@@ -19,7 +19,6 @@ header {
     align-items: center;
     padding: 10px;
 .header-top {
-  left: 40px;
   position: relative;
   justify-content: space-around;
   display: flex;
@@ -51,7 +50,7 @@ line-height: normal;
     .user-controls {
       gap: 10px;
       bottom: 50px;
-      right: 65px;
+      right: 15px;
       position: relative;
       display: flex;
       font-size: 24px;
@@ -82,7 +81,7 @@ line-height: normal;
 
   .search-container {
     width: 80%;
-    left: 5px;
+    left: 30px;
     bottom: 40px;
     position: relative;
     display: flex;
