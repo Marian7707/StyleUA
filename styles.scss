@@ -1,0 +1,91 @@
+$primary-color: #0072ff;
+$mobile-width: 430px;
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  .header-container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+.header-top {
+  justify-content: space-between;
+  gap: 20px;
+  display: flex;
+  h1{
+    font-size: 24px;
+  }
+}
+    .hamburger-btn {
+      font-size: 24px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .logo {
+      height: 163px; // Adjust this value as needed
+    }
+
+    .user-controls {
+      display: flex;
+      font-size: 24px;
+
+      button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-left: 10px;
+        .account {
+          width: 32px;
+        }
+        img {
+          width: 40px;
+        }
+      }
+    }
+  }
+
+  .search-container {
+    display: flex;
+    margin: 10px;
+    
+    input[type="search"] {
+      flex-grow: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px 0 0 20px;
+      outline: none;
+    }
+
+    .search-btn {
+      padding: 10px;
+      border: none;
+      background-color: $primary-color;
+      color: white;
+      border-radius: 0 20px 20px 0;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  header {
+    .header-container {
+      padding: 10px;
+    }
+
+    .search-container {
+      margin: 10px;
+    }
+  }
+}
