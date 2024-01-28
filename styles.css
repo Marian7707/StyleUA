@@ -2,12 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Arial", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
 header {
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -20,16 +14,17 @@ header .header-container {
   padding: 10px;
 }
 header .header-container .header-top {
-  justify-content: space-between;
-  gap: 50px;
+  justify-content: space-around;
+  gap: 40px;
   display: flex;
 }
 header .header-container .header-top h1 {
   text-align: center;
+  box-shadow: 0 10px 12px rgb(116, 192, 252);
   border-radius: 10px;
   padding: 5px;
   background-color: yellow;
-  height: 57px;
+  height: 65px;
   color: #74C0FC;
   font-family: Inter;
   font-size: 24px;
@@ -44,6 +39,7 @@ header .header-container .hamburger-btn {
   cursor: pointer;
 }
 header .header-container .logo {
+  transition: all 0.3s ease;
   height: 163px;
 }
 header .header-container .user-controls {
@@ -57,6 +53,12 @@ header .header-container .user-controls button {
   border: none;
   cursor: pointer;
   margin-left: 10px;
+  transition: all 0.3s ease;
+}
+header .header-container .user-controls button:hover {
+  border-radius: 20px;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 header .header-container .user-controls button .account {
   width: 32px;
@@ -65,10 +67,11 @@ header .header-container .user-controls button img {
   width: 40px;
 }
 header .search-container {
-  bottom: 50px;
+  width: 80%;
+  bottom: 40px;
   position: relative;
   display: flex;
-  margin: 10px;
+  margin: auto;
 }
 header .search-container input[type=search] {
   flex-grow: 1;
@@ -84,6 +87,9 @@ header .search-container .search-btn {
   color: white;
   border-radius: 0 20px 20px 0;
   cursor: pointer;
+}
+header .search-container img {
+  width: 15px;
 }
 
 @media (max-width: 430px) {
