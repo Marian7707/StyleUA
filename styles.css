@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Arial", sans-serif;
   margin: 0;
@@ -17,11 +21,21 @@ header .header-container {
 }
 header .header-container .header-top {
   justify-content: space-between;
-  gap: 20px;
+  gap: 50px;
   display: flex;
 }
 header .header-container .header-top h1 {
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: yellow;
+  height: 57px;
+  color: #74C0FC;
+  font-family: Inter;
   font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
 }
 header .header-container .hamburger-btn {
   font-size: 24px;
@@ -33,6 +47,8 @@ header .header-container .logo {
   height: 163px;
 }
 header .header-container .user-controls {
+  bottom: 50px;
+  position: relative;
   display: flex;
   font-size: 24px;
 }
@@ -49,6 +65,8 @@ header .header-container .user-controls button img {
   width: 40px;
 }
 header .search-container {
+  bottom: 50px;
+  position: relative;
   display: flex;
   margin: 10px;
 }
