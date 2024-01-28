@@ -19,20 +19,19 @@ header {
     align-items: center;
     padding: 10px;
 .header-top {
- 
+  left: 40px;
+  position: relative;
   justify-content: space-around;
-  gap: 40px;
   display: flex;
   h1{
     text-align: center;
-    box-shadow: 0 10px 12px rgba(116, 192, 252, 1);
-    border-radius: 10px;
+    display: flex;
+    align-items: center;
     padding: 5px;
-    background-color: yellow;
-    height: 65px;
+    height: 85px;
 color: #74C0FC;
-font-family: Inter;
-font-size: 24px;
+font-family: Pacifico;
+font-size: 29px;
 font-style: normal;
 font-weight: 900;
 line-height: normal;
@@ -43,17 +42,16 @@ line-height: normal;
       background: none;
       border: none;
       cursor: pointer;
-
     }
 
     .logo {
-transition: all 0.3s ease;
-
       height: 163px; // Adjust this value as needed
     }
 
     .user-controls {
+      gap: 10px;
       bottom: 50px;
+      right: 65px;
       position: relative;
       display: flex;
       font-size: 24px;
@@ -84,7 +82,7 @@ transition: all 0.3s ease;
 
   .search-container {
     width: 80%;
-
+    left: 5px;
     bottom: 40px;
     position: relative;
     display: flex;

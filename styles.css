@@ -14,20 +14,20 @@ header .header-container {
   padding: 10px;
 }
 header .header-container .header-top {
+  left: 40px;
+  position: relative;
   justify-content: space-around;
-  gap: 40px;
   display: flex;
 }
 header .header-container .header-top h1 {
   text-align: center;
-  box-shadow: 0 10px 12px rgb(116, 192, 252);
-  border-radius: 10px;
+  display: flex;
+  align-items: center;
   padding: 5px;
-  background-color: yellow;
-  height: 65px;
+  height: 85px;
   color: #74C0FC;
-  font-family: Inter;
-  font-size: 24px;
+  font-family: Pacifico;
+  font-size: 29px;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
@@ -39,11 +39,12 @@ header .header-container .hamburger-btn {
   cursor: pointer;
 }
 header .header-container .logo {
-  transition: all 0.3s ease;
   height: 163px;
 }
 header .header-container .user-controls {
+  gap: 10px;
   bottom: 50px;
+  right: 65px;
   position: relative;
   display: flex;
   font-size: 24px;
@@ -68,6 +69,7 @@ header .header-container .user-controls button img {
 }
 header .search-container {
   width: 80%;
+  left: 5px;
   bottom: 40px;
   position: relative;
   display: flex;
