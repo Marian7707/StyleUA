@@ -35,14 +35,16 @@ font-style: normal;
 font-weight: 900;
 line-height: normal;
   }
+  
 }
     .hamburger-btn {
+      position: relative;
+      z-index: 2;
       font-size: 24px;
       background: none;
       border: none;
       cursor: pointer;
     }
-
     .logo {
       height: 163px; // Adjust this value as needed
     }
@@ -78,7 +80,39 @@ line-height: normal;
       }
     }
   }
-
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px; // Початкове положення за межами екрану
+    width: 250px; // Встановіть ширину бічної панелі
+    height: 100%;
+    background: white;
+    transition: right 0.3s ease;
+    z-index: 1000; // Забезпечує, що панель знаходиться над іншими елементами
+  
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+  
+      li a {
+        display: block;
+        padding: 15px 20px;
+        text-decoration: none;
+        color: black; // Ваш колір тексту
+        border-bottom: 1px solid #ccc; // Опціонально, для розділення пунктів меню
+  
+        &:hover {
+          background-color: #f8f8f8; // Опціонально, для ефекту при наведенні
+        }
+      }
+    }
+  }
+  
+  // Клас .active для відображення меню
+  .sidebar.active {
+    right: 0; // Переміщує панель у видиму область
+  }
   .search-container {
     width: 80%;
     left: 20px;
